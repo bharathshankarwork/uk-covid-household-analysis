@@ -13,9 +13,14 @@ Analysis of UK household employment, income and wellbeing during the COVID-19 pa
 ## Key Findings
 - 52% of respondents were employed during the COVID baseline period
 - Only 6.5% of workers were working from home full time
-- 46.17% gender pay gap identified — males earning £2,843 vs females £1,560
+- 46.2% gender pay gap identified — males earning £3,739.86 vs females £2,013.14
+- Household-level earnings gap far narrower: 14% (£5,955 male vs £5,132 female), suggesting dual-income offset
 - 65% of benefit claimants saw their benefits decrease during COVID
 - 64% of NHS shielding respondents were not working
+
+## Data Quality Note
+
+An earlier version of the gender pay gap query filtered on `blhhearn_amount_dv > 0` but averaged `blpay_amount_dv` without applying the same filter, which meant missing-value codes (-8/-9) and zero entries were pulled into the average. This was caught in code review and corrected using separate `FILTER (WHERE ... > 0)` clauses on each average, then re-verified against the raw data. The corrected figures above reflect that fix.
 
 ## Tools Used
 - PostgreSQL — data storage and SQL analysis
