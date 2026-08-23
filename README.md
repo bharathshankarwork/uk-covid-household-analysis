@@ -25,7 +25,8 @@ Analysis of UK household employment, income and wellbeing during the COVID-19 pa
 - UK Data Service — data source
 
 ## Dashboard
-[Link to Power BI Dashboard] — add your published link here
+![COVID-19 Household Analysis Dashboard 1](screenshots/dashboard-overview-1.png)
+![COVID-19 Household Analysis Dashboard 2](screenshots/dashboard-overview-2.png)
 
 ## Files
 - `sql_queries.sql` — all 8 SQL queries used in analysis
