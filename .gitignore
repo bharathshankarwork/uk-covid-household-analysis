@@ -1,0 +1,8 @@
+# raw survey data - requires UK Data Service registration, never commit
+data/raw/*
+!data/raw/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.venv/
