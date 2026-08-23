@@ -31,7 +31,7 @@ Analysis of UK household employment, income and wellbeing during the COVID-19 pa
 ## Files
 - `sql_queries.sql` — all 8 SQL queries used in analysis
 - `dashboard_screenshots/` — Power BI dashboard images
-- `data/` — cleaned CSV files
+
 
 ## Dataset
 Understanding Society COVID-19 Survey — UK Data Service
